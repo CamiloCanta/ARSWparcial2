@@ -15,6 +15,7 @@ import java.util.Set;
  */
 public interface RestaurantOrderServices {
 
+
     void addNewOrderToTable(Order o) throws OrderServicesException;
 
     int calculateTableBill(int tableNumber) throws OrderServicesException;
@@ -28,5 +29,7 @@ public interface RestaurantOrderServices {
     Set<Integer> getTablesWithOrders();
 
     void releaseTable(int tableNumber) throws OrderServicesException;
-    
+
+    public StringBuilder getOrders();
+
 }
